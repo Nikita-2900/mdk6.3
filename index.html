@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js" defer></script>
+    <style>
+        .d {
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <input type="number" id="sum">
-    <select id="from_currency">
-        <option value="RUB">Рубли</option>
-        <option value="USD">Доллары</option>
-        <option value="EUR">Евро</option>
-        <option value="KZT">Тенге</option>
-    </select>
-    <select id="to_currency">
-        <option value="RUB">Рубли</option>
-        <option value="USD">Доллары</option>
-        <option value="EUR">Евро</option>
-        <option value="KZT">Тенге</option>
-    </select>
-    <button id="button">Расчитать</button>
-    <p id="result"></p>
+    
+    <div class="d">
+        <input type="number" id="sum">
+        <select id="from_currency">
+            <option value="RUB">Рубли</option>
+            <option value="USD">Доллары</option>
+            <option value="EUR">Евро</option>
+            <option value="KZT">Тенге</option>
+        </select>
+        <select id="to_currency">
+            <option value="RUB">Рубли</option>
+            <option value="USD">Доллары</option>
+            <option value="EUR">Евро</option>
+            <option value="KZT">Тенге</option>
+        </select>
+    </div>
+    <div class="d">
+        <button id="button">Расчитать</button>
+        <button id="s_button">Поменять</button>
+        <p id="result"></p>
+    </div>
 </body>
 </html>

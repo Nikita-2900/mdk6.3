@@ -2,6 +2,7 @@ const sum = document.getElementById('sum');
 const from = document.getElementById('from_currency');
 const to = document.getElementById('to_currency');
 const button = document.getElementById('button');
+const s_button = document.getElementById('s_button');
 const result = document.getElementById('result');
 
 let res = 0;
@@ -45,4 +46,11 @@ button.addEventListener('click', () => {
         res = res.toFixed(2);
         result.textContent = `${sum.value} ${from.value} = ${res} ${to.value}`;
     };
+});
+
+s_button.addEventListener('click', () => {
+    const from_2 = from.value
+    const to_2 = to.value
+    from.value = to_2
+    to.value = from_2
 });
